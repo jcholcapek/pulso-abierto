@@ -2,9 +2,23 @@
 
 ## Descripción
 
-Pulso Abierto es una aplicación web que permite consultar los precios de Bitcoin, Ethereum y Solana expresados en dólares estadounidenses (USD).
+Pulso Abierto es una aplicación web desarrollada con React y TypeScript que permite consultar los precios de Bitcoin, Ethereum y Solana expresados en dólares estadounidenses (USD).
 
-La información se obtiene desde una API pública y se presenta mediante tarjetas para facilitar su lectura. La interfaz informa el estado de la consulta y permite volver a intentarla si ocurre un error.
+La aplicación ofrece un listado de criptomonedas, navegación hacia páginas de detalle, administración de favoritos con persistencia y un formulario controlado con validación.
+
+La información de las cotizaciones se obtiene mediante CoinGecko API.
+
+## Tecnologías utilizadas
+
+- React
+- TypeScript
+- Vite
+- Zustand
+- React Router
+- Vitest
+- Testing Library
+- Zod
+- CoinGecko API
 
 ## API utilizada
 
@@ -69,10 +83,22 @@ Aplicar el formato de Prettier:
 npm run format
 ```
 
+Ejecutar las pruebas automatizadas:
+
+```bash
+npm run test
+```
+
 Generar la versión de producción:
 
 ```bash
 npm run build
+```
+
+Comprobar la versión de producción mediante Preview:
+
+```bash
+npm run preview
 ```
 
 ## Estados de la interfaz
@@ -87,21 +113,23 @@ La aplicación contempla los siguientes estados:
 
 ## Capturas
 
-La carpeta `evidencias/` contiene las capturas de pantalla de la aplicación en vista de escritorio y móvil, junto con las evidencias de los estados de la interfaz.
+La carpeta `Evidencias/` contiene las capturas de pantalla de la aplicación en vista de escritorio y móvil, junto con las evidencias de los estados de la interfaz y las pruebas automatizadas.
 
 ## Despliegue
 
-Aplicación publicada en Vercel:
+**Aplicación publicada en Vercel:**
 
 https://pulso-abierto.vercel.app/
 
-Repositorio de GitHub:
+**Repositorio de GitHub:**
 
 https://github.com/jcholcapek/pulso-abierto
 
 ## Mejora de mantenibilidad
 
-Se modificó la construcción de la URL de consulta a CoinGecko para obtener dinámicamente los identificadores de las criptomonedas desde el arreglo `cryptocurrencies`. Esto evita duplicar información y facilita futuras modificaciones.
+Se modificó la construcción de la URL de consulta a CoinGecko para obtener dinámicamente los identificadores de las criptomonedas desde el arreglo `cryptocurrencies`.
+
+Esto evita duplicar información y facilita futuras modificaciones.
 
 Se verificó que el cambio no alterara el funcionamiento mediante las pruebas automatizadas, el análisis de código y la compilación.
 
@@ -109,9 +137,9 @@ Se verificó que el cambio no alterara el funcionamiento mediante las pruebas au
 
 - [x] Pruebas automatizadas.
 - [x] TypeScript y ESLint.
-- [x] Build de producción.
-- [x] Preview local.
-- [x] Despliegue en Vercel.
-- [x] Verificación de la aplicación publicada.
+- [x] Build de producción generado correctamente.
+- [x] Preview local comprobado.
+- [x] Despliegue realizado en Vercel.
+- [x] Aplicación publicada y verificada.
 
-Fecha de verificación: 05/11/2026.
+**Fecha de verificación:** 05/11/2026.
