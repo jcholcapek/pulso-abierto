@@ -1,4 +1,3 @@
-
 # Pulso Abierto — Consulta de criptomonedas
 
 ## Descripción
@@ -89,3 +88,30 @@ La aplicación contempla los siguientes estados:
 ## Capturas
 
 La carpeta `evidencias/` contiene las capturas de pantalla de la aplicación en vista de escritorio y móvil, junto con las evidencias de los estados de la interfaz.
+
+## Despliegue
+
+Aplicación publicada en Vercel:
+
+https://pulso-abierto.vercel.app/
+
+Repositorio de GitHub:
+
+https://github.com/jcholcapek/pulso-abierto
+
+## Mejora de mantenibilidad
+
+Se modificó la construcción de la URL de consulta a CoinGecko para obtener dinámicamente los identificadores de las criptomonedas desde el arreglo `cryptocurrencies`. Esto evita duplicar información y facilita futuras modificaciones.
+
+Se verificó que el cambio no alterara el funcionamiento mediante las pruebas automatizadas, el análisis de código y la compilación.
+
+## Verificación final
+
+- [x] Pruebas automatizadas.
+- [x] TypeScript y ESLint.
+- [x] Build de producción.
+- [x] Preview local.
+- [x] Despliegue en Vercel.
+- [x] Verificación de la aplicación publicada.
+
+Fecha de verificación: 05/11/2026.
